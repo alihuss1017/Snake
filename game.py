@@ -84,7 +84,7 @@ class SnakeGame:
             self.snake.pop() #pops last index of snake to prevent snake from infinitely growing by simply moving
 
         self.updateUI()
-        self.clock.tick(speed)
+        self.clock.tick(speed) #updates screen at 'speed' rate
         return gameOver, self.score
 
     def isCollision(self): #classifies collisions
